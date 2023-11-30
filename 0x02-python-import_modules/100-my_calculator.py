@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-```python
 import sys
 from calculator_1 import add, sub, mul, div
 
@@ -25,4 +24,3 @@ else:
     result = div(a, b)
 
 print(f"{a} {operator} {b} = {result}")
-```
