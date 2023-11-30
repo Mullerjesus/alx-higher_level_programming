@@ -1,0 +1,1 @@
+This individual project focuses on the Python - import & modules  program using Python, completed by Muluken Eshetu, a student of ALX-SE Cohort 19, on November 30, 2023. The project demonstrates Muluken's proficiency in Python programming and serves as a foundational exercise in software development.
