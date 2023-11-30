@@ -21,6 +21,4 @@ elif operator == '-':
 elif operator == '*':
     result = mul(a, b)
 else:
-    result = div(a, b)
-
-print(f"{a} {operator} {b} = {result}")
+    result = div(a,{a} {operat:or} {b} = {result}")
