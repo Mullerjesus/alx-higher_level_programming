@@ -65,5 +65,5 @@ prev_slow->next = slow_ptr;
 }
 }
 
-return (is_palindrome);
+return (0);
 }
