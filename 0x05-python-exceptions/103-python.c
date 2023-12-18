@@ -1,6 +1,10 @@
 #include <Python.h>
 #include <stdio.h>
 
+/**
+* print_python_list - Prints some basic info about Python lists.
+* @p: A PyObject list object.
+*/
 void print_python_list(PyObject *p)
 {
 Py_ssize_t size, i;
@@ -24,6 +28,10 @@ print_python_bytes(obj);
 }
 }
 
+/**
+* print_python_bytes - Prints some basic info about Python bytes objects.
+* @p: A PyObject bytes object.
+*/
 void print_python_bytes(PyObject *p)
 {
 Py_ssize_t size, i;
@@ -40,4 +48,7 @@ str = PyBytes_AsString(p);
 printf("[.] bytes object info\n  size: %ld\n  trying string: %s\n  first 10 bytes: ", size, str);
 for (i = 0; i < size && i < 10; i++)
 {
-printf("%02x
+printf("%02x ", (unsigned char)str[i]);
+}
+printf("\n");
+}
