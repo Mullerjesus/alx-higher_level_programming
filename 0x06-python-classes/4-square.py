@@ -69,4 +69,3 @@ if __name__ == "__main__":
         print("Area: {} for size: {}".format(my_square.area(), my_square.size))
     except Exception as e:
         print(e)
-
