@@ -31,3 +31,4 @@ if __name__ == "__main__":
         print(my_square.__size)
     except Exception as e:
         print(e)
+
