@@ -1,11 +1,10 @@
 #!/usr/bin/python3
 """Square Class Definition."""
 
-
-
 class Square:
     """
-    Represents a square with a private instance attribute and a public instance method.
+    Represents a square with a private instance attribute and
+    a public instance method.
     """
 
     def __init__(self, size=0):
