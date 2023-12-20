@@ -3,8 +3,7 @@
 
 class Square:
     """
-    Represents a square with a private instance attribute and
-    a public instance method.
+    Represents a square with private instance attribute and public instance.
     """
 
     def __init__(self, size=0):
