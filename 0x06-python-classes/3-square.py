@@ -23,7 +23,7 @@ class Square:
             size (int): The size of the square.
         """
         if not isinstance(size, int):
-            raise TypeError("size must be an integer")  # Updated error message
+            raise TypeError("Size must be an integer")
         elif size < 0:
             raise ValueError("Size must be >= 0")
         else:
@@ -37,7 +37,3 @@ class Square:
             int: The area of the square.
         """
         return self.__size ** 2
-
-# Test the Square class
-square = Square(9)
-print(square.area())  # Output: 81
