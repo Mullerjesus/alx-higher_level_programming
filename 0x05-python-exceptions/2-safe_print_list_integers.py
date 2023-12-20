@@ -1,53 +1,30 @@
 #!/usr/bin/python3
-"""Defines a class Square"""
 
-
-class Square:
+def safe_print_list_integers(my_list=[], x=0):
     """
-    A class that represents a square.
-
-    Attributes:
-        size (int): The size of the square (1 side).
-    """
-    def __init__(self, size=0):
-        """Initializes a new square instance.
+    Prints the first x elements of a list and only integers.
+    my_list can contain any type (integer, string, etc.)
+    You have to use try: / except:
+    You have to use "{:d}".format() to print as integer.
+    You are not allowed to import any module.
+    All integers have to be printed on the same line followed by a new line,
+    - other type of value in the list must be skipped (in silence).
+    You are not allowed to use len().
 
         Args:
-            size (int): The size of the square (1 side).
-        """
-        self.__size = size
+            x: Number of elements to access in my_list.
 
-    def area(self):
-        """Calculates the area of the square.
-
-        Returns:
-            int: The calculated area of the square.
-        """
-        return self.__size ** 2
-
-    @property
-    def size(self):
-        """Gets the size of the square.
-
-        Returns:
-            int: The size of the square.
-        """
-        return self.__size
-
-    @size.setter
-    def size(self, value):
-        """Sets the size of the square.
-
-        Args:
-            value (int): The size of the square (1 side).
-
-        Raises:
-            TypeError: If size is not an integer.
-            ValueError: If size is less than 0.
-        """
-        if not isinstance(value, int):
-            raise TypeError("size must be an integer")
-        elif value < 0:
-            raise ValueError("size must be >= 0")
+        Returns: The real number of integers printed.
+    """
+    count = 0
+    for item in range(x):
+        if isinstance(my_list[item], int):
+            try:
+                print(my_list[item], end='')
+            except IndexError:
+                break
         else:
-            self.__size = value
+            continue
+        count += 1
+    print()
+    return count
