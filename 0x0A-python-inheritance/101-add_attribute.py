@@ -1,18 +1,10 @@
 #!/usr/bin/python3
-"""
-method module
-"""
+""" A attribute adding module """
 
 
-def add_attribute(obj, objname, value):
-    """add attribute to object
-    args:
-        obj: class object
-        objname: object name
-        value: value of attribute
-    return:
-        na
-    """
-    if hasattr(obj, "__dict__") == False:
+def add_attribute(a_class, name, value):
+    """ Adds a new attribute to an object if it’s possible """
+    if hasattr(a_class, "__dict__"):
+        setattr(a_class, name, value)
+    else:
         raise TypeError("can't add new attribute")
-    setattr(obj, objname, value)
