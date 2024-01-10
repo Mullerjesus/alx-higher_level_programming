@@ -1,15 +1,18 @@
 #!/usr/bin/python3
+"""
+Contains the "from_json_string" function
+"""
 
 import json
 
-def to_json_string(my_obj):
+def from_json_string(json_string):
     """
-    Returns the JSON representation of an object.
+    Returns an object represented by a JSON string.
 
     Args:
-        my_obj: the object to be serialized to JSON
+        json_string: the JSON string to be deserialized
 
     Returns:
-        A JSON string representing the input object
+        The deserialized object from the input JSON string
     """
-    return json.dumps(my_obj)
+    return json.loads(json_string)
