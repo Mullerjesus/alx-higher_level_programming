@@ -13,7 +13,7 @@ if __name__ == "__main__":
         __import__('8-load_from_json_file').load_from_json_file
 
     filename = "add_item.json"
-    with open(filename, 'a+') as f:  # Create add_item.json, if necessary
+    with open(filename, 'a+') as f:
         if f.tell() == 0:
             json.dump([], f)
     file_data = load_from_json_file("add_item.json")
