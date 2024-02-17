@@ -1,12 +1,7 @@
--- creates the database hbtn_0d_usa and the table states (in the database hbtn_0d_usa) on MySQL server
+-- script creates db hbtn_0d_usa and the table states
+-- create db
 CREATE DATABASE IF NOT EXISTS hbtn_0d_usa;
-USE hbtn_0d_usa;
-
-CREATE TABLE IF NOT EXISTS states 
-(
-    id INT NOT NULL AUTO_INCREMENT,
-    name VARCHAR(256) NOT NULL,
-    PRIMARY KEY (id)
-);
-
-INSERT INTO states (name) VALUES ('California'), ('Arizona'), ('Texas');
+-- Use db created
+USE hbtn_0d_usa
+-- create table in db
+CREATE TABLE IF NOT EXISTS states (id INT UNIQUE NOT NULL AUTO_INCREMENT, name VARCHAR(255) NOT NULL, PRIMARY KEY(id));
