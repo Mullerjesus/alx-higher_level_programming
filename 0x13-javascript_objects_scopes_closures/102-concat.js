@@ -1,12 +1,6 @@
 #!/usr/bin/node
 const fs = require('fs');
 
-const fileA = process.argv[2];
-const fileB = process.argv[3];
-const fileC = process.argv[4];
-
-const dataA = fs.readFileSync(fileA, 'utf8');
-const dataB = fs.readFileSync(fileB, 'utf8');
-const concatenatedData = dataA + '\n' + dataB;
-
-fs.writeFileSync(fileC, concatenatedData);
+const fArg = fs.readFileSync(process.argv[2]).toString();
+const sArg = fs.readFileSync(process.argv[3]).toString();
+fs.writeFileSync(process.argv[4], fArg + sArg);
