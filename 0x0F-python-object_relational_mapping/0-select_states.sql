@@ -7,6 +7,3 @@ CREATE TABLE IF NOT EXISTS states (
     PRIMARY KEY (id)
 );
 INSERT INTO states (name) VALUES ("California"), ("Arizona"), ("Texas"), ("New York"), ("Nevada");
-
-guillaume@ubuntu:~/0x0F$ cat 0-select_states.sql | mysql -uroot -p
-Enter password:
